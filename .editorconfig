@@ -1,0 +1,42 @@
+# All Types
+[*]
+root = true
+indent_style = tab
+indent_size = 4
+tab_width = 4
+ij_any_keep_indents_on_empty_lines = true
+trim_trailing_whitespace = false
+
+# Front End File Types
+[*.{js,jsx,ts,tsx,vue,json,css,less,sass,scss,html}]
+# [*.{js,jsx,ts,tsx,vue,json,css,less,sass,scss,html,xml}]
+root = true
+charset = utf-8
+indent_style = tab
+indent_size = 4
+tab_width = 4
+end_of_line = crlf
+max_line_length = 120
+insert_final_newline = true
+ij_any_line_comment_add_space = true
+ij_any_space_after_comma = true
+ij_any_space_before_comma = false
+ij_javascript_comma_on_new_line = false
+ij_javascript_line_comment_add_space = true
+ij_typescript_line_comment_add_space = true
+ij_any_keep_indents_on_empty_lines = true
+trim_trailing_whitespace = false
+
+# YAML
+[*.{yml,yaml}]
+indent_style = space;
+indent_size = 2;
+
+# JavaScript
+# [*.{js,jsx,ts,tsx,vue}]
+# indent_style = tab
+# indent_size = 4
+# end_of_line = crlf
+# trim_trailing_whitespace = true
+# insert_final_newline = true
+# max_line_length = 120
