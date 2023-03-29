@@ -1,22 +1,23 @@
 <idea-plugin>
-    <id>ua.in.dej.myEmmet</id>
-    <name>Emmet Everywhere</name>
-    <vendor url="http://dej.in.ua/emmet-everywhere/" email="efim@dej.in.ua">Efim Vl. Dejin</vendor>
-
-    <!-- Product and plugin compatibility requirements -->
-    <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
-    <depends>com.intellij.modules.platform</depends>
-
-    <extensions defaultExtensionNs="com.intellij">
-    </extensions>
-
-    <applicationListeners>
-    </applicationListeners>
-
-    <actions>
-        <action id="EmmetEverywhere" class="ua.in.dej.myEmmet.myEmmet" text="EmmetEverywhere" description="EmmetEverywhere">
-            <add-to-group group-id="EditorActions" anchor="first"/>
-            <keyboard-shortcut keymap="$default" first-keystroke="ctrl alt CLOSE_BRACKET"/>
-        </action>
-    </actions>
+	<id>ua.in.dej.myEmmet</id>
+	<name>Emmet Everywhere</name>
+	<vendor url="http://dej.in.ua/emmet-everywhere/" email="efim@dej.in.ua">Efim Vl. Dejin</vendor>
+	
+	<!-- Product and plugin compatibility requirements -->
+	<!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+	<depends>com.intellij.modules.platform</depends>
+	
+	<extensions defaultExtensionNs="com.intellij">
+	</extensions>
+	
+	<applicationListeners>
+	</applicationListeners>
+	
+	<actions>
+		<action id="EmmetEverywhere" class="ua.in.dej.myEmmet.MyEmmet" text="EmmetEverywhere" description="EmmetEverywhere">
+			<add-to-group group-id="EditorActions" anchor="first"/>
+			<keyboard-shortcut keymap="$default" first-keystroke="ctrl alt CLOSE_BRACKET"/>
+		</action>
+	</actions>
+    
 </idea-plugin>
