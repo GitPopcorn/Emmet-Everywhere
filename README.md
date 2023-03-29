@@ -3,9 +3,22 @@
 [![Downloads](https://img.shields.io/jetbrains/plugin/d/7450-emmet-everywhere.svg)](https://plugins.jetbrains.com/plugin/7450-emmet-everywhere)
 
 
-Old version https://github.com/edejin/EmmetEverywhere
+- Old version1 https://github.com/edejin/EmmetEverywhere
+- Old version2 https://github.com/niontrix/Emmet-Everywhere
+- Forked from https://github.com/niontrix/Emmet-Everywhere
 
 <!-- Plugin description -->
+
+## Change Notes
+
+### 1.2.7 - 2023-03-29
+
+- Fix the problem of plugin with `Old version2` that fail to load script engine since IDEA running with JDK17.
+	- In those versions of IDEA, the script engine `Nashorn` is not defaultly embedded in JDK.
+	- This new version of plugin will try to load script engine from dependencies to solve this.
+	- So the packages will be a little bit bigger (contains the libraries of `Graal JS` and `Nashorn`).
+- Add selection support for expanding operation.
+	- Now the selection instead of characters at left side of caret will be expanded if you do select. 
 
 EmmetEverywhere Plugin for IntelliJ IDEA
 ========================================
@@ -35,7 +48,7 @@ Here’s an example: this abbreviation
 </div>
 ```
 
-more information about Emmet:
+More information about Emmet:
 
 http://emmet.io/
 <!-- Plugin description end -->
