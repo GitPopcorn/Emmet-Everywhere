@@ -20,6 +20,11 @@ plugins {
 	id("org.jlleitschuh.gradle.ktlint") version "10.0.0"
 }
 
+// Configure Ktlint linter plugin
+configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+	disabledRules.set(setOf("no-trailing-spaces"))
+}
+
 group = properties("pluginGroup")
 version = properties("pluginVersion")
 
